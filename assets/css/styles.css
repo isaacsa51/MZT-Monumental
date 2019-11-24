@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/*
+ *		Mazatlán Monumental - 211119
+ *		Autor: Isaac Serrano
+ *		Contacto: serranoie99@gmail.com
+ */
+@font-face {
+  font-family: "sunset-regular";
+  src: url(../fonts/SunsetRegular.ttf);
+}
+
+@font-face {
+  font-family: "sunset-alt";
+  src: url(../fonts/SunsetBeach.ttf);
+}
+
+@font-face {
+  font-family: "sunset";
+  src: url(../fonts/SUNSET.ttf);
+}
+
+/* BODY */
+body {
+  background-image: url("../img/BG.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff !important;
+  padding-top: 105px;
+  font-family: sunset-regular !important;
+}
+
+body .center {
+  display: inline;
+  margin: 0 auto;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+}
+
+body .font-alt {
+  font-family: "Century Gothic", sans-serif !important;
+}
+
+/* NAVBAR */
+.fixed-top-2 {
+  margin-top: 56px;
+}
+
+.primary-nav {
+  background-color: #869fac !important;
+}
+
+.primary-nav .navbar-brand {
+  max-width: 500px !important;
+}
+
+.second-nav {
+  padding-top: 15px;
+}
+
+.second-nav button {
+  border: 0 !important;
+}
+
+.second-nav .navbar-nav .nav-item {
+  border-left: 4px solid #fff;
+}
+
+.second-nav .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-family: "Century Gothic", sans-serif !important;
+  text-transform: uppercase;
+}
+
+.second-nav .navbar-nav .active {
+  background-color: #a1b0b7;
+}
+
+.second-nav .navbar-nav .last-nav {
+  border-right: 4px solid #fff;
+}
+
+/* SLOGAN */
+#slogan {
+  font-family: sunset-alt !important;
+  letter-spacing: 2px;
+}
+
+/* IMAGENES INDEX */
+#imagenes-rot .card-content {
+  background: #ffffff !important;
+  border: 15px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#imagenes-rot .card-content .card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#imagenes-rot .card-content .card-img img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  border: 8px solid #fff;
+}
+
+#imagenes-rot .card-content .card-desc {
+  padding: 2px 8px 10px 8px;
+}
+
+#imagenes-rot .card-content .card-desc p {
+  text-align: center;
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#imagenes-rot #card1 {
+  -webkit-transform: rotate(-10deg) !important;
+          transform: rotate(-10deg) !important;
+}
+
+#imagenes-rot #card2 {
+  -webkit-transform: rotate(4deg) !important;
+          transform: rotate(4deg) !important;
+}
+
+#imagenes-rot #card3 {
+  -webkit-transform: rotate(14deg) !important;
+          transform: rotate(14deg) !important;
+}
+
+#imagenes-rot #card4 {
+  -webkit-transform: rotate(-12deg) !important;
+          transform: rotate(-12deg) !important;
+}
+
+#imagenes-rot .text-sunset {
+  font-family: sunset !important;
+}
+
+/* MONUMENTOS */
+#monumentos-header p {
+  font-family: "Century Gothic", sans-serif !important;
+  font-size: 16px;
+}
+
+#monumentos-links a:hover {
+  border: none !important;
+  text-decoration: none !important;
+}
+
+#monumentos-links .card-content {
+  background: #ffffff !important;
+  border: 15px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#monumentos-links .card-content .card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#monumentos-links .card-content .card-img img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 8px solid #fff;
+}
+
+#monumentos-links .card-content .card-desc {
+  padding: 2px 8px 10px 8px;
+}
+
+#monumentos-links .card-content .card-desc p {
+  text-align: center;
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* GALERIA */
+#monumentos-galeria .card-content {
+  background: #ffffff !important;
+  border: 15px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#monumentos-galeria .card-content .card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#monumentos-galeria .card-content .card-img img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 8px solid #fff;
+}
+
+#monumentos-galeria .card-content .card-desc {
+  padding: 2px 8px 10px 8px;
+}
+
+#monumentos-galeria .card-content .card-desc p {
+  text-align: center;
+  color: #000 !important;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#monumentos-galeria .card-content .card-desc .autor {
+  text-align: left !important;
+  color: #575757 !important;
+  font-style: italic !important;
+}
+
+/* ACERCA DEL PUERTO */
+#info-ciudad h2 {
+  font-family: sunset-alt !important;
+  color: #f7c98d;
+}
+
+#info-ciudad p {
+  font-family: "Century Gothic", sans-serif !important;
+  text-align: justify;
+}
+
+/* BOUNCE EFFECT */
+.fa-arrow-down {
+  color: #73a3ac;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  -webkit-animation: bounce .8s infinite linear;
+  animation: bounce .8s infinite linear;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* FOOTER */
+footer {
+  font-family: "Century Gothic", sans-serif;
+  color: #fff !important;
+  background-color: #4d4c4c !important;
+  padding: 20px;
+}
+
+footer .social {
+  color: #fff;
+}
+
+footer .social #social-ig {
+  color: #fff;
+}
+
+footer .social #social-ig .instagram {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 26px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+footer .social #social-fb {
+  color: #fff;
+}
+
+footer .social #social-fb .facebook {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 32px;
+  vertical-align: middle;
+  background: #335295;
+}
+
+footer .social #social-tw {
+  color: #fff;
+}
+
+footer .social #social-tw .twitter {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 28px;
+  vertical-align: middle;
+  background: #00a6ff;
+}
+/*# sourceMappingURL=styles.css.map */
