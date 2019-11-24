@@ -52,7 +52,7 @@
 	</nav>
 
 	<!-- MAIN -->
-	<div id="info-ciudad" class="mt-5">
+	<div id="info-ciudad" class="mt-5 mb-5 pb-5">
 		<div class="container">
 			<div class="row">
 
@@ -82,6 +82,7 @@
 	</div>
 
 	<!-- FOOTER -->
+	<div class="footerfix"></div>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -112,6 +113,17 @@
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 	</script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		$(window).scroll(function() {
+			/* scrolled after scrolling 100px */
+			if ($(document).scrollTop() > 50) {
+				$('.second-nav').addClass('scrolled');
+			} else {
+				$('.second-nav').removeClass('scrolled');
+			}
+		});
+	</script>
 </body>
 
 </html>

@@ -56,7 +56,7 @@
 	</nav>
 
 	<!-- MAIN -->
-	<div id="monumentos-links">
+	<div id="monumentos-links" class="mb-5 pb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 pt-5">
@@ -67,15 +67,15 @@
 							</a>
 						</div>
 						<div class="card-desc">
-							<p>Monumento a la mujer mazatleca</p>
+							<p>Monumento al pescador</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-lg-6 pt-5">
 					<p class="font-alt">
-							El Monumento al Pescador popularmente llamado como “Los Monos Bichis” cuyo nombre original es “La alegoría marina” es una obra realizada por el escultor  Rodolfo Becerra Gómez  donde quiso plasmar  los elementos que simbolizan todo aquello que estuviera en comunión directa con el mar. Es por eso que en él se observan un pescador a punto de aventar su red, teniendo como único testigo un faro que emite una centelleante luz de esperanza. Y a su lado se encuentra recostada una mujer que muestra la belleza de las mujeres del puerto. <br><br>
-							También se incluyen en figuras de especies marinas muy conocidas como son es el pez vela, tiburón delfín y el cuerpo de una mujer recostada plácidamente en espera de su hombre, bañada por el quemante sol y la brisa del mar.							
+						El Monumento al Pescador popularmente llamado como “Los Monos Bichis” cuyo nombre original es “La alegoría marina” es una obra realizada por el escultor  Rodolfo Becerra Gómez  donde quiso plasmar  los elementos que simbolizan todo aquello que estuviera en comunión directa con el mar. Es por eso que en él se observan un pescador a punto de aventar su red, teniendo como único testigo un faro que emite una centelleante luz de esperanza. Y a su lado se encuentra recostada una mujer que muestra la belleza de las mujeres del puerto. <br><br>
+						También se incluyen en figuras de especies marinas muy conocidas como son es el pez vela, tiburón delfín y el cuerpo de una mujer recostada plácidamente en espera de su hombre, bañada por el quemante sol y la brisa del mar.	
 					</p>
 				</div>
 			</div>
@@ -83,6 +83,7 @@
 	</div>
 
 	<!-- FOOTER -->
+	<div class="footerfix"></div>
 	<footer class="mt-5">
 		<div class="container">
 			<div class="row">
@@ -114,6 +115,17 @@
 	</script>
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script src="../assets/js/jquery.fancybox.min.js"></script>
+
+	<script>
+		$(window).scroll(function() {
+			/* scrolled after scrolling 100px */
+			if ($(document).scrollTop() > 50) {
+				$('.second-nav').addClass('scrolled');
+			} else {
+				$('.second-nav').removeClass('scrolled');
+			}
+		});
+	</script>
 </body>
 
 </html>

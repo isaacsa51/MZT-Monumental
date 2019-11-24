@@ -28,6 +28,9 @@ body {
   color: #fff !important;
   padding-top: 105px;
   font-family: sunset-regular !important;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
 }
 
 body .center {
@@ -48,6 +51,10 @@ body .font-alt {
 }
 
 /* NAVBAR */
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.253) !important;
+}
+
 .fixed-top-2 {
   margin-top: 56px;
 }
@@ -62,6 +69,8 @@ body .font-alt {
 
 .second-nav {
   padding-top: 15px;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
 }
 
 .second-nav button {
@@ -84,6 +93,15 @@ body .font-alt {
 
 .second-nav .navbar-nav .last-nav {
   border-right: 4px solid #fff;
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    border-left: none !important;
+  }
+  .last-nav {
+    border-right: none !important;
+  }
 }
 
 /* SLOGAN */
@@ -345,11 +363,19 @@ body .font-alt {
 }
 
 /* FOOTER */
+.footerfix {
+  height: 4rem !important;
+}
+
 footer {
   font-family: "Century Gothic", sans-serif;
   color: #fff !important;
   background-color: #4d4c4c !important;
   padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
 }
 
 footer .social {

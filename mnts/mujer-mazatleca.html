@@ -56,7 +56,7 @@
 	</nav>
 
 	<!-- MAIN -->
-	<div id="monumentos-links">
+	<div id="monumentos-links" class="mb-5 pb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 pt-5">
@@ -75,7 +75,7 @@
 				<div class="col-lg-6 pt-5">
 					<p class="font-alt">
 						La mujer mazatleca es conocida como una mujer muy bella. Debido a la gran migración europea (franceses, alemanes, españoles)  se hizo un mestizaje con los nativos difícil de encontrar en otras partes de México.  La mujer nacida en el puerto tiene características que fueron muy bien representadas en el monumento donado y creado por el artista Gabriel Ruiz el 23 de noviembre de 1983. Este también fue autor de la canción “Mazatlán”, sin duda, la Perla del Pacifico dejo algo muy grande en el corazón de este gran artista.
-						Este monumento se encuentra ubicado en la glorieta Rodolfo Sánchez Taboada, y como es obvio, es una clara descripción y homenaje a la belleza  exuberante de la mujer mazatleca. Esta figura de bronce tiene bellas proporciones y gran estética, con los brazos abiertos hace notar el carácter 
+						Este monumento se encuentra ubicado en la glorieta Rodolfo Sánchez Taboada, y como es obvio, es una clara descripción y homenaje a la belleza  exuberante de la mujer mazatleca. Esta figura de bronce tiene bellas proporciones y gran estética, con los brazos abiertos hace notar el carácter.
 					</p>
 				</div>
 			</div>
@@ -83,6 +83,7 @@
 	</div>
 
 	<!-- FOOTER -->
+	<div class="footerfix"></div>
 	<footer class="mt-5">
 		<div class="container">
 			<div class="row">
@@ -114,6 +115,17 @@
 	</script>
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script src="../assets/js/jquery.fancybox.min.js"></script>
+
+	<script>
+		$(window).scroll(function() {
+			/* scrolled after scrolling 100px */
+			if ($(document).scrollTop() > 50) {
+				$('.second-nav').addClass('scrolled');
+			} else {
+				$('.second-nav').removeClass('scrolled');
+			}
+		});
+	</script>
 </body>
 
 </html>
